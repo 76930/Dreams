@@ -30,7 +30,6 @@ public class BraceletQrCodeController {
 
 	// product_id 产品ID
 	
-	
 	@RequestMapping(value = "/getQrcode", method = RequestMethod.GET)
 	@ResponseBody
 	public String getQrcode(String mac) {
@@ -81,6 +80,11 @@ public class BraceletQrCodeController {
 		return parames.toString();
 	}
 	
+	/**
+	 * 根据
+	 * @param deviceId 获取绑定状态，暂时用不到
+	 * @return
+	 */
 	@RequestMapping(value = "/getstat", method = RequestMethod.GET)
 	@ResponseBody
 	public String getstat(String deviceId ) {
